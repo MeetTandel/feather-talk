@@ -90,7 +90,7 @@ export function makeServer({ environment = "development" } = {}) {
 
       // to allow cloudinary route
       this.passthrough(
-        "https://api.cloudinary.com/v1_1/ddfyxmlhe/image/upload"
+        "https://api.cloudinary.com/v1_1/djxpf0jzi/image/upload"
       );
     },
   });

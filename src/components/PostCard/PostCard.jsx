@@ -53,7 +53,7 @@ export function PostCard({ post, showComment }) {
   };
 
   return (
-    <div className="relative h-max flex flex-col gap-4 bg-white p-2 shadow-md border border-slate-300 rounded-xl overflow-hidden">
+    <div className="relative h-max flex flex-col gap-4 bg-white p-2 shadow-md border rounded-xl overflow-hidden">
       <section>
         <div className="flex items-center gap-2 overflow-hidden justify-between">
           <div className="h-[100%] grow flex items-center gap-2">

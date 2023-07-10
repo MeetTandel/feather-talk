@@ -2,16 +2,20 @@ import { BiEditAlt as EditIcon, BiCamera as MediaIcon } from "react-icons/bi";
 import { useEffect, useRef, useState } from "react";
 import { ProgressBar } from "react-loader-spinner";
 import { useDispatch, useSelector } from "react-redux";
-import { handleCreatePost, handleEditPost, handleMediaUpload } from "../../store/PostsSlice";
+import {
+  handleCreatePost,
+  handleEditPost,
+  handleMediaUpload,
+} from "../../store/PostsSlice";
 
 export function CreateNewPost({ postId, edit = false }) {
-  const { user, posts } = useSelector(state => state.data)
+  const { user, posts } = useSelector((state) => state.data);
   const [selectedPost, setSelectedPost] = useState(false);
   const [errorState, setErrorState] = useState(false);
   const [mediaUrl, setMediaUrl] = useState("");
   const [mediaUploadLoading, setMediaUploadLoading] = useState(false);
   const postContentRef = useRef("");
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   let postFound = null;
 
   useEffect(() => {
@@ -40,11 +44,13 @@ export function CreateNewPost({ postId, edit = false }) {
       if (postContentRef?.current?.value?.length <= 0) {
         setErrorState(true);
       } else {
-        dispatch(handleEditPost(
-          selectedPost?._id,
-          postContentRef?.current?.value,
-          mediaUrl
-        ));
+        dispatch(
+          handleEditPost(
+            selectedPost?._id,
+            postContentRef?.current?.value,
+            mediaUrl
+          )
+        );
       }
     }
   };
@@ -63,7 +69,7 @@ export function CreateNewPost({ postId, edit = false }) {
   };
 
   return (
-    <div className="bg-white rounded-xl">
+    <div className="bg-white border rounded-xl">
       <div className="flex items-center gap-1 p-3">
         <EditIcon />
         <h2 className="font-normal">
@@ -121,7 +127,7 @@ export function CreateNewPost({ postId, edit = false }) {
 
       <div className="flex items-center justify-between p-3">
         <div className="flex gap-2 items-center">
-          <label className="flex items-center gap-1 cursor-pointer bg-blue-100 text-slate-400 px-4 py-1 rounded-2xl hover:bg-blue-200 hover:text-slate-800 hover:shadow-md">
+          <label className="flex items-center gap-1 cursor-pointer bg-blue-400 text-white px-4 py-1 rounded-2xl hover:bg-blue-200 hover:text-slate-800 hover:shadow-md">
             <input
               type="file"
               onChange={(e) => handleMediaClick(e)}
@@ -136,7 +142,7 @@ export function CreateNewPost({ postId, edit = false }) {
         <button
           disabled={mediaUploadLoading}
           onClick={handlePostClick}
-          className={`bg-blue-100 text-slate-400 px-4 py-1 rounded-2xl hover:bg-blue-200 hover:text-slate-800 hover:shadow-md ${
+          className={`bg-blue-400 text-white px-4 py-1 rounded-2xl hover:bg-blue-200 hover:text-slate-800 hover:shadow-md ${
             mediaUploadLoading && "cursor-not-allowed"
           }`}
         >

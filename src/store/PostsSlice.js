@@ -255,11 +255,11 @@ export const handleMediaUpload = async (selectedImage) => {
     const formData = new FormData();
     formData.append("file", selectedImage);
     formData.append(":use_filename", true);
-    formData.append("upload_preset", "uzfl2950");
-    formData.append("folder", "SnapSquad/post-images");
+    formData.append("upload_preset", "y0rmqfwq");
+    formData.append("folder", "FeatherTalk/post-images");
 
     const data = await fetch(
-      "https://api.cloudinary.com/v1_1/ddfyxmlhe/image/upload",
+      "https://api.cloudinary.com/v1_1/djxpf0jzi/image/upload",
       {
         method: "post",
         body: formData,

@@ -31,7 +31,7 @@ export function UserCard({ user, options, hideDetails }) {
     <div data-nav="user-card" id="user-card" className="flex flex-col gap-2">
       {showUserSettings && (
         <div>
-          <UserSettings />
+          <UserSettings setShowUserSettings={setShowUserSettings} />
         </div>
       )}
 

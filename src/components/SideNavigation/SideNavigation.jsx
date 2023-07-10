@@ -13,8 +13,6 @@ import { UserCard } from "../UserCard/UserCard";
 export function SideNavigation({ setShowPostModal }) {
   const {user} = useSelector(state => state.data)
 
-  console.log("user", user)
-
   return (
     <div className="flex flex-col h-full justify-between gap-4 pb-[4rem] md:pb-[0rem]">
       <div
@@ -27,7 +25,7 @@ export function SideNavigation({ setShowPostModal }) {
             const classes =
               "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
 
-            return isActive ? `${classes} text-blue-400 font-bold` : classes;
+            return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
         >
           <HomeIcon className="text-[2rem] lg:text-xl" />
@@ -39,7 +37,7 @@ export function SideNavigation({ setShowPostModal }) {
             const classes =
               "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
 
-            return isActive ? `${classes} text-blue-400 font-bold` : classes;
+            return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
         >
           <ExploreIcon className="text-[2rem] lg:text-xl" />
@@ -51,7 +49,7 @@ export function SideNavigation({ setShowPostModal }) {
             const classes =
               "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
 
-            return isActive ? `${classes} text-blue-400 font-bold` : classes;
+            return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
         >
           <BookmarkIcon className="text-[2rem] lg:text-xl" />
@@ -63,7 +61,7 @@ export function SideNavigation({ setShowPostModal }) {
             const classes =
               "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
 
-            return isActive ? `${classes} text-blue-400 font-bold` : classes;
+            return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
         >
           <LikeIcon className="text-[2rem] lg:text-xl" />
@@ -75,7 +73,7 @@ export function SideNavigation({ setShowPostModal }) {
             const classes =
               "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
 
-            return isActive ? `${classes} text-blue-400 font-bold` : classes;
+            return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
         >
           <UserIcon className="text-[2rem] lg:text-xl" />

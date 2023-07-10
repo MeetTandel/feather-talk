@@ -1,16 +1,21 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import { logout } from "../../store/AuthSlice";
+import { setTheme } from "../../store/DataSlice";
 
-export function UserSettings() {
+export function UserSettings({setShowUserSettings}) {
   const navigate = useNavigate()
   const dispatch = useDispatch()
+  const {theme} = useSelector(state => state.data)
+
   const handleClick = (e) => {
     const clickedOn = e.target?.dataset?.option;
 
     if (clickedOn === "logout") {
       dispatch(logout(navigate));
     } else if (clickedOn === "switch-theme") {
+      dispatch(setTheme());
+      setShowUserSettings(false);
     }
   };
 
@@ -30,7 +35,7 @@ export function UserSettings() {
         data-option="switch-theme"
         className="cursor-pointer hover:bg-slate-100 p-2 px-4"
       >
-        Dark
+        {theme === "light" ? "Dark" : "Light"}
       </h3>
     </div>
   );

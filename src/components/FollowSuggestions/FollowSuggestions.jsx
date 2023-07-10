@@ -12,11 +12,8 @@ export function FollowSuggestions() {
       !user.following.find((user) => user._id === suggestedUser._id)
   );
 
-  console.log("suggested", suggestedUsers)
-
-
   return (
-    <div className="flex flex-col">
+    <div className="border rounded-xl flex flex-col">
       <h3 className="p-2">Suggested for you</h3>
 
       <hr></hr>
@@ -44,8 +41,6 @@ export function FollowSuggestions() {
         return (
           <div key={user._id}>
             <UserCard user={user} options="follow" />
-
-            <hr></hr>
           </div>
         );
       })}

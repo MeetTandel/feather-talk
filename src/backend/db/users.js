@@ -14,7 +14,7 @@ export const users = [
     bio: "Frontend Developer",
     bookmarks: [],
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987695/SnapSquad/profile-images/aman-harsh_bmtklz.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688982644/FeatherTalk/profile-images/meet-profile-photo.jpg",
     website: "https://example.com/",
     createdAt: "2023-01-01T10:55:06+05:30",
     updatedAt: formatDate(),

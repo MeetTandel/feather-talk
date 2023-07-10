@@ -207,11 +207,11 @@ export const handleProfilePictureUpload = async (selectedImage) => {
     const formData = new FormData();
     formData.append("file", selectedImage);
     formData.append(":use_filename", true);
-    formData.append("upload_preset", "uzfl2950");
-    formData.append("folder", "SnapSquad/profile-images");
+    formData.append("upload_preset", "y0rmqfwq");
+    formData.append("folder", "FeatherTalk/profile-images");
 
     const data = await fetch(
-      "https://api.cloudinary.com/v1_1/ddfyxmlhe/image/upload",
+      "https://api.cloudinary.com/v1_1/djxpf0jzi/image/upload",
       {
         method: "post",
         body: formData,
@@ -238,6 +238,7 @@ const dataSlice = createSlice({
     posts: [],
     filteredPosts: [],
     userFeed: [],
+    theme: localStorage.getItem("theme"),
     sortMethod: "latest",
     isLoading: false,
     userLoading: false,
@@ -274,6 +275,17 @@ const dataSlice = createSlice({
     setPostsLoading(state, action) {
       state.postsLoading = action.payload;
     },
+    setTheme(state, action) {
+      if (state.theme === "light") {
+        localStorage.theme = "dark";
+        localStorage.setItem("theme", "dark")
+        state.theme = "dark"
+      } else {
+        localStorage.theme = "light";
+        localStorage.setItem("theme", "light")
+        state.theme = "light"
+      }
+    }
   },
   extraReducers: {},
 });
@@ -290,5 +302,6 @@ export const {
   setDataLoading,
   setUsersLoading,
   setPostsLoading,
+  setTheme
 } = actions;
 export default reducer;

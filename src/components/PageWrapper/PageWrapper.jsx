@@ -28,7 +28,7 @@ export function PageWrapper({ children }) {
   return (
     <div
       onClick={(e) => handleSideNavClose(e)}
-      className="flex flex-row justify-around h-screen bg-gray-200   gap-4 p-4 md:px-4 lg:px-16 w-screen grow relative overflow-y-auto [&::-webkit-scrollbar]:hidden"
+      className="flex flex-row justify-around h-screen bg-white gap-4 p-4 md:px-4 lg:px-16 w-screen grow relative overflow-y-auto [&::-webkit-scrollbar]:hidden"
     >
       <aside className="mb-4 w-[15%] lg:w-[20%] h-[98%] sticky top-0 hidden md:block overflow-y-auto [&::-webkit-scrollbar]:hidden">
         <SideNavigation setShowPostModal={setShowPostModal} />

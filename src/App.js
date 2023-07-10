@@ -13,10 +13,21 @@ import {
 } from "./pages/index";
 import { ProtectedRoute, PageWrapper } from "./components/index";
 import { Toaster } from "react-hot-toast";
+import { useSelector } from "react-redux";
 
 function App() {
+  const {theme} = useSelector(state => state.data)
+  
+  if (!theme) {
+    localStorage.setItem("theme", "light");
+  } else if (theme === "dark") {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+  
   return (
-    <div className="text-slate-800 relative">
+    <div className="text-slate-800 dark:text-white relative">
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
