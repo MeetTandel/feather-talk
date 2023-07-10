@@ -238,7 +238,10 @@ const dataSlice = createSlice({
     posts: [],
     filteredPosts: [],
     userFeed: [],
-    theme: localStorage.getItem("theme"),
+    theme:
+      localStorage.getItem("theme") === null
+        ? "light"
+        : localStorage.getItem("theme"),
     sortMethod: "latest",
     isLoading: false,
     userLoading: false,
@@ -278,14 +281,14 @@ const dataSlice = createSlice({
     setTheme(state, action) {
       if (state.theme === "light") {
         localStorage.theme = "dark";
-        localStorage.setItem("theme", "dark")
-        state.theme = "dark"
+        localStorage.setItem("theme", "dark");
+        state.theme = "dark";
       } else {
         localStorage.theme = "light";
-        localStorage.setItem("theme", "light")
-        state.theme = "light"
+        localStorage.setItem("theme", "light");
+        state.theme = "light";
       }
-    }
+    },
   },
   extraReducers: {},
 });
@@ -302,6 +305,6 @@ export const {
   setDataLoading,
   setUsersLoading,
   setPostsLoading,
-  setTheme
+  setTheme,
 } = actions;
 export default reducer;

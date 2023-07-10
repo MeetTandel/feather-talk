@@ -47,7 +47,7 @@ export function Signup() {
   return (
     <div className="h-screen flex flex-col">
       <div className="bg-blue-400 h-[10%] flex justify-center items-center">
-        <h1 className="text-white">Join SnapSquad</h1>
+        <h1 className="text-white">Join FeatherTalk</h1>
       </div>
 
       <div className="bg-blue-100 flex grow justify-center items-center">

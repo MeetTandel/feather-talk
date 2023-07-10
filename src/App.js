@@ -14,6 +14,7 @@ import {
 import { ProtectedRoute, PageWrapper } from "./components/index";
 import { Toaster } from "react-hot-toast";
 import { useSelector } from "react-redux";
+import { setTheme } from "./store/DataSlice";
 
 function App() {
   const {theme} = useSelector(state => state.data)
@@ -25,6 +26,8 @@ function App() {
   } else {
     document.documentElement.classList.remove("dark");
   }
+
+  console.log("theme")
   
   return (
     <div className="text-slate-800 dark:text-white relative">

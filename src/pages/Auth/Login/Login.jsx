@@ -4,6 +4,7 @@ import { FaEye as EyeIcon, FaEyeSlash as EyeOffIcon } from "react-icons/fa";
 import { useLocation, useNavigate } from "react-router";
 import { NavLink } from "react-router-dom";
 import login_page_logo from "../../../assets/login_page_logo.svg";
+import feather_talk_logo from "../../../assets/feather-talk-logo.png";
 import { useDispatch, useSelector } from "react-redux";
 import { loginValidation } from "../../../utilities/utilities";
 import { login, setAuthError } from "../../../store/AuthSlice";
@@ -39,16 +40,16 @@ export function Login() {
 
   return (
     <div className="min-h-screen flex justify-between">
-      <div className="bg-blue-400 w-[50%] hidden md:flex h-screen justify-center items-center">
+      <div className="bg-white w-[50%] hidden md:flex h-screen justify-center items-center">
         <div className="flex flex-col items-center gap-4  w-[40%]">
-          <img src={login_page_logo} alt="logo" className="w-[100%]" />
-          <h1 className="text-white font-medium text-3xl">SnapSquad</h1>
+          <img src={feather_talk_logo} alt="logo" className="w-[100%]" />
+          <h1 className="text-blue-400 font-medium text-3xl">FeatherTalk</h1>
         </div>
       </div>
 
       <div className="bg-blue-100 w-[50%] grow flex flex-col gap-4 h-screen justify-center items-center">
         <h1 className="text-blue-400 font-medium md:hidden">
-          Login to SnapSquad
+          Login to FeatherTalk
         </h1>
         <form
           onSubmit={handleLogin}
