@@ -11,5 +11,6 @@ module.exports = {
       sans: ["Segoe UI", "Poppins", "sans-serif"],
     },
   },
+  darkMode: "class",
   plugins: [],
 };

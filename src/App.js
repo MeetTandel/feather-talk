@@ -27,7 +27,7 @@ function App() {
     document.documentElement.classList.remove("dark");
   }
 
-  console.log("theme")
+  console.log("theme", theme)
   
   return (
     <div className="text-slate-800 dark:text-white relative">
