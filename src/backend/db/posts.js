@@ -33,10 +33,9 @@ export const posts = [
   },
   {
     _id: "siFFxfYI1s",
-    content:
-      "Check out this stunning landscape shot I took during my recent trip!",
+    content: "Went a trip to a hill station!",
     mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686988965/SnapSquad/post-images/IMG_1041_qdxc0u.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688996309/FeatherTalk/post-images/hill-station_i9ibkk.webp",
     likes: {
       likeCount: 18,
       likedBy: [],
@@ -49,10 +48,9 @@ export const posts = [
   },
   {
     _id: "3XHvLP1fg",
-    content:
-      "Sharing some macro shots I captured in my backyard. Nature never ceases to amaze me!",
+    content: "Check out this amazing view from my hotel.",
     mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686988843/SnapSquad/post-images/IMG_8746_hhir5c.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688997723/FeatherTalk/post-images/hotel-view_nmegvv.jpg",
     likes: {
       likeCount: 14,
       likedBy: [],
@@ -75,10 +73,7 @@ export const posts = [
   },
   {
     _id: "pOX2sDQF7e",
-    content:
-      "Just returned from a photography workshop. Learned so many new techniques! Here's Jaipur's Aksharsham Temple during a cloudy night!",
-    mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686989691/SnapSquad/post-images/IMG_7406_xj88md.jpg",
+    content: "Returned from a React Nexus meetup and met a lot of people.",
     likes: {
       likeCount: 27,
       likedBy: [],
@@ -91,10 +86,9 @@ export const posts = [
   },
   {
     _id: "fIHrB5Ny3X",
-    content:
-      "Had a great time exploring the countryside with my camera. Nature never fails to inspire me! Captured these Star Trails during the night.",
+    content: "Took this country side photo.",
     mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686989828/SnapSquad/post-images/StarTrails_rsbqwm.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688997726/FeatherTalk/post-images/countryside_dip38a.jpg",
     likes: {
       likeCount: 2,
       likedBy: [],
@@ -117,10 +111,9 @@ export const posts = [
   },
   {
     _id: "tUH3oPm6Rx",
-    content:
-      "Experimenting with long exposure photography at sunset. Love how God painted the sky today!",
+    content: "I am already scared!!",
     mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686989097/SnapSquad/post-images/IMG_8312_rq8iro.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688996424/FeatherTalk/post-images/bridge_kcxeua.webp",
     likes: {
       likeCount: 34,
       likedBy: [],
@@ -157,27 +150,11 @@ export const posts = [
     updatedAt: formatDate(),
   },
   {
-    _id: "kLWR4sJg6E",
-    content:
-      "Captured this beautiful Kingfisher with a kill during a photography session!",
-    mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686989220/SnapSquad/post-images/IMG_9234_oiscpe.jpg",
-    likes: {
-      likeCount: 4,
-      likedBy: [],
-      dislikedBy: [],
-    },
-    comments: [],
-    username: "davidbrown",
-    createdAt: "2022-10-05T14:20:00+05:30",
-    updatedAt: formatDate(),
-  },
-  {
     _id: "mNDu3jZb2A",
     content:
-      "The magnificient Mehrangarh Fort of Jodhpur with the rarest Super Blue Blood Moon. The view from the top was absolutely breathtaking!",
+      "I visited one of the 7 seven wonders of the world. What a moment!",
     mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686989508/SnapSquad/post-images/IMG_8553_uidd77.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688996102/FeatherTalk/post-images/taJ-mahal2_gajcig.jpg",
     likes: {
       likeCount: 25,
       likedBy: [],
@@ -209,9 +186,9 @@ export const posts = [
   },
   {
     _id: "nGHt2yFv8R",
-    content:
-      "Attended a photography exhibition showcasing incredible wildlife photographs. Nature's beauty is truly unmatched.",
-    mediaURL: "",
+    content: "What a beauty!",
+    mediaURL:
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688997391/FeatherTalk/post-images/snow-leapord_gdjqno.jpg",
     likes: {
       likeCount: 0,
       likedBy: [],
@@ -224,10 +201,9 @@ export const posts = [
   },
   {
     _id: "dJIs5kAv4G",
-    content:
-      "Captured this shot during a Pre-Wedding shoot. Loved the architectural beuaty with an amazing sunset!",
+    content: "Took this amazing sunset pic.",
     mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686990213/SnapSquad/post-images/IMG_0024_hrhhjj.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688995710/FeatherTalk/post-images/sunset_mtstsw.jpg",
     likes: {
       likeCount: 18,
       likedBy: [],
@@ -250,9 +226,8 @@ export const posts = [
   },
   {
     _id: "gKLt7qFu3D",
-    content: "Steel Wool Orb. I love doing long exposure photography!",
-    mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686990738/SnapSquad/post-images/IMG_5479_jraj4x.jpg",
+    content:
+      "Just made my first Open Source Contribution and I just want to keep going.",
     likes: {
       likeCount: 12,
       likedBy: [],
@@ -265,10 +240,7 @@ export const posts = [
   },
   {
     _id: "jYRl5qNd4S",
-    content:
-      "Last weekend I attended a session steel-wool photography. Here's one shot from that session!",
-    mediaURL:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686990570/SnapSquad/post-images/IMG_5481_bfurjr.jpg",
+    content: "I just attended the React Expo and WHAT a Feeling that was!",
     likes: {
       likeCount: 14,
       likedBy: [],

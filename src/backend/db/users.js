@@ -28,7 +28,7 @@ export const users = [
     bio: "Be yourself!",
     bookmarks: [],
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987696/SnapSquad/profile-images/alice-smith_nzzktx.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688998080/FeatherTalk/profile-images/alice-smith_i6mvez.jpg",
     website: "https://example.com/",
     createdAt: "2023-01-01T10:55:06+05:30",
     updatedAt: formatDate(),
@@ -42,7 +42,7 @@ export const users = [
     bio: "Hello World",
     bookmarks: [],
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987696/SnapSquad/profile-images/bob-johnson_nzay4t.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688998092/FeatherTalk/profile-images/bob-johnson_bmo9dr.jpg",
     website: "https://example.com/",
     createdAt: "2023-01-02T10:55:06+05:30",
     updatedAt: formatDate(),
@@ -56,7 +56,7 @@ export const users = [
     bio: "What's in bio?",
     bookmarks: [],
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987696/SnapSquad/profile-images/carol-williams_vgurqc.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688998075/FeatherTalk/profile-images/carol-williams_m7dqph.jpg",
     website: "https://example.com/",
     createdAt: "2023-01-01T10:55:06+05:30",
     updatedAt: formatDate(),
@@ -69,7 +69,7 @@ export const users = [
     password: "davidBrown123",
     bio: "What's in bio?",
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987696/SnapSquad/profile-images/david-brown_mqqywo.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688998079/FeatherTalk/profile-images/david-brown_r8stly.jpg",
     website: "https://example.com/",
     createdAt: "2023-01-03T10:55:06+05:30",
     updatedAt: formatDate(),
@@ -83,7 +83,7 @@ export const users = [
     bio: "Aspiring Frontend Engineer",
     bookmarks: [],
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987696/SnapSquad/profile-images/emma-davis_pjpozk.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688998037/FeatherTalk/profile-images/emma-davis_s7a82w.jpg",
     website: "https://example.com/",
     createdAt: "2023-01-04T10:55:06+05:30",
     updatedAt: formatDate(),
@@ -97,7 +97,7 @@ export const users = [
     bio: "What's up?",
     bookmarks: [],
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987697/SnapSquad/profile-images/frank-wilson_xoia3q.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688998057/FeatherTalk/profile-images/frank-wilson_yeexmm.jpg",
     website: "",
     createdAt: "2023-01-05T10:55:06+05:30",
     updatedAt: formatDate(),
@@ -111,7 +111,7 @@ export const users = [
     bio: "Frontend Engineer",
     bookmarks: [],
     avatarUrl:
-      "https://res.cloudinary.com/ddfyxmlhe/image/upload/v1686987697/SnapSquad/profile-images/grace-martinez_ukt6dy.jpg",
+      "https://res.cloudinary.com/djxpf0jzi/image/upload/v1688998028/FeatherTalk/profile-images/grace-martinez_xmqa1k.jpg",
     website: "",
     createdAt: "2023-01-06T10:55:06+05:30",
     updatedAt: formatDate(),
