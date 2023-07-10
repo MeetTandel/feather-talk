@@ -36,7 +36,9 @@ export function CreateNewPost({ postId, edit = false }) {
       if (postContentRef?.current?.value?.length <= 0) {
         setErrorState(true);
       } else {
-        dispatch(handleCreatePost(postContentRef?.current?.value, mediaUrl));
+        dispatch(
+          handleCreatePost({ text: postContentRef?.current?.value, mediaUrl })
+        );
         postContentRef.current.value = "";
         setMediaUrl("");
       }
@@ -45,11 +47,11 @@ export function CreateNewPost({ postId, edit = false }) {
         setErrorState(true);
       } else {
         dispatch(
-          handleEditPost(
-            selectedPost?._id,
-            postContentRef?.current?.value,
-            mediaUrl
-          )
+          handleEditPost({
+            id: selectedPost?._id,
+            text: postContentRef?.current?.value,
+            media: mediaUrl,
+          })
         );
       }
     }

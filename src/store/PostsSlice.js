@@ -163,11 +163,11 @@ export const removeBookmark = createAsyncThunk(
 
 export const handleCreatePost = createAsyncThunk(
   "posts/createPost",
-  async (postContent, mediaUrl, { dispatch }) => {
+  async ({text, mediaUrl}, { dispatch }) => {
     dispatch(setLoading(true));
 
     const post = {
-      content: postContent,
+      content: text,
       mediaURL: mediaUrl,
     };
 
@@ -182,6 +182,7 @@ export const handleCreatePost = createAsyncThunk(
 
       const updatedPosts = response.data.posts;
 
+      console.log("updated", updatedPosts)
       if (response.status === 201) {
         dispatch(setAllPosts(updatedPosts));
         toast.success("New post created!");
@@ -219,17 +220,17 @@ export const handleDeletePost = createAsyncThunk(
 
 export const handleEditPost = createAsyncThunk(
   "posts/editPost",
-  async (postId, postContent, mediaUrl, { dispatch }) => {
+  async ({id, text, media}, { dispatch }) => {
     dispatch(setLoading(true));
 
     const post = {
-      content: postContent,
-      mediaURL: mediaUrl,
+      content: text,
+      mediaURL: media,
     };
 
     try {
       const response = await axios.post(
-        `/api/posts/edit/${postId}`,
+        `/api/posts/edit/${id}`,
         { postData: post },
         {
           headers: { authorization: token },

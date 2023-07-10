@@ -24,7 +24,7 @@ export function UserFeed() {
       dispatch(fetchAllUsers());
       dispatch(fetchAllPosts());
     }
-  }, [user]);
+  }, [user, posts]);
 
   return (
     <div className="h-max flex flex-col gap-6">
