@@ -129,7 +129,7 @@ export function CreateNewPost({ postId, edit = false }) {
 
       <div className="flex items-center justify-between p-3">
         <div className="flex gap-2 items-center">
-          <label className="flex items-center gap-1 cursor-pointer bg-blue-400 dark:bg-gray-500 text-white px-4 py-1 rounded-2xl hover:bg-blue-200 dark:hover:bg-gray-400 hover:text-slate-800 dark:hover:text-white hover:shadow-md dark:shadow-gray-700">
+          <label className="flex items-center gap-1 cursor-pointer bg-blue-400 text-white px-4 py-1 rounded-2xl hover:bg-blue-200 hover:text-slate-800 :shadow-md ">
             <input
               type="file"
               onChange={(e) => handleMediaClick(e)}
@@ -144,7 +144,7 @@ export function CreateNewPost({ postId, edit = false }) {
         <button
           disabled={mediaUploadLoading}
           onClick={handlePostClick}
-          className={`bg-blue-400 dark:bg-gray-500 text-white px-4 py-1 rounded-2xl hover:bg-blue-200 dark:hover:bg-gray-400 hover:text-slate-800 dark:hover:text-white hover:shadow-md dark:shadow-gray-700 ${
+          className={`bg-blue-400 text-white px-4 py-1 rounded-2xl hover:bg-blue-200 hover:text-slate-800 hover:shadow-md ${
             mediaUploadLoading && "cursor-not-allowed"
           }`}
         >
