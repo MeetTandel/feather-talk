@@ -23,7 +23,7 @@ export function SideNavigation({ setShowPostModal }) {
           to="/"
           className={({ isActive }) => {
             const classes =
-              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
+              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 dark:hover:bg-gray-600 hover:shadow-md";
 
             return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
@@ -35,7 +35,7 @@ export function SideNavigation({ setShowPostModal }) {
           to="/explore"
           className={({ isActive }) => {
             const classes =
-              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
+              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 dark:hover:bg-gray-600 hover:shadow-md";
 
             return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
@@ -47,7 +47,7 @@ export function SideNavigation({ setShowPostModal }) {
           to="/bookmarks"
           className={({ isActive }) => {
             const classes =
-              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
+              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 dark:hover:bg-gray-600 hover:shadow-md";
 
             return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
@@ -59,7 +59,7 @@ export function SideNavigation({ setShowPostModal }) {
           to="/liked"
           className={({ isActive }) => {
             const classes =
-              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
+              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 dark:hover:bg-gray-600 hover:shadow-md";
 
             return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
@@ -71,7 +71,7 @@ export function SideNavigation({ setShowPostModal }) {
           to={`/profile/${user?.username}`}
           className={({ isActive }) => {
             const classes =
-              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 hover:shadow-md";
+              "flex items-center gap-2 p-2 lg:pr-6 w-max rounded-full text-xl font-medium hover:bg-blue-100 dark:hover:bg-gray-600 hover:shadow-md";
 
             return isActive ? `${classes} text-blue-500 font-bold` : classes;
           }}
@@ -82,7 +82,7 @@ export function SideNavigation({ setShowPostModal }) {
 
         <button
           onClick={() => setShowPostModal((prev) => !prev)}
-          className="flex items-center justify-center gap-2 p-2 pr-4 md:pr-2 lg:pr-4 w-[80%] md:w-max lg:w-[80%] rounded-full text-xl font-medium text-white bg-blue-400 shadow-md hover:bg-blue-100 hover:text-slate-800 hover:outline hover:outline-blue-400"
+          className="flex items-center justify-center gap-2 p-2 pr-4 md:pr-2 lg:pr-4 w-[80%] md:w-max lg:w-[80%] rounded-full text-xl font-medium text-white bg-blue-400 shadow-md hover:bg-blue-100 dark:hover:bg-gray-800 hover:text-slate-800 dark:hover:text-white hover:outline hover:outline-blue-400"
         >
           <EditIcon className="text-[2rem] lg:text-xl" />
           <p className="md:hidden lg:block">Post</p>

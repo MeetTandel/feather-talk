@@ -50,7 +50,7 @@ export function Signup() {
         <h1 className="text-white">Join FeatherTalk</h1>
       </div>
 
-      <div className="bg-blue-100 flex grow justify-center items-center">
+      <div className="bg-blue-100 dark:text-slate-800 flex grow justify-center items-center">
         <form
           onSubmit={handleSignup}
           className="w-[80%] max-w-[400px] md:w-[50%]"

@@ -126,7 +126,7 @@ export function Profile() {
                       <img
                         src={avatarUrl}
                         alt={`${username}'s profile`}
-                        className="w-[80px] h-[80px] sm:w-[150px] sm:h-[150px] rounded-full object-cover outline outline-4 outline-gray-200 bg-gray-300 shadow-lg"
+                        className="w-[80px] h-[80px] sm:w-[150px] sm:h-[150px] rounded-full object-cover outline outline-4 outline-gray-200 dark:outline-gray-800 bg-gray-300 shadow-lg"
                       />
                     </div>
 
@@ -170,9 +170,13 @@ export function Profile() {
                   </div>
                 </div>
 
-                <div className="realtive w-full text-center md:text-left py-2 px-6">
+                <div className="realtive w-full text-center md:text-left py-2 px-8">
                   <p className="my-1">{bio}</p>
-                  <a href="/" target="blank">
+                  <a
+                    href={website}
+                    target="blank"
+                    className="text-blue-600 hover:underline"
+                  >
                     {website}
                   </a>
                   <div

@@ -22,18 +22,18 @@ export function UserSettings({setShowUserSettings}) {
   return (
     <div
       onClick={handleClick}
-      className="flex flex-col gap-1 bg-white rounded-xl text-right overflow-hidden"
+      className="flex flex-col gap-1 bg-white dark:bg-gray-600 rounded-xl text-right shadow-lg overflow-hidden"
     >
       <h3
         data-option="logout"
-        className="cursor-pointer hover:bg-slate-100 p-2 px-4"
+        className="cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 p-2 px-4"
       >
         Logout
       </h3>
       <hr></hr>
       <h3
         data-option="switch-theme"
-        className="cursor-pointer hover:bg-slate-100 p-2 px-4"
+        className="cursor-pointer hover:bg-slate-100 dark:hover:bg-slate-700 p-2 px-4"
       >
         {theme === "light" ? "Dark" : "Light"}
       </h3>

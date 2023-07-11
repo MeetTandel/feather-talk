@@ -4,7 +4,7 @@ export function UserFollowDetails({ option, user, setShowFollowModal }) {
   const { followers, following } = user;
 
   return (
-    <div className="flex flex-col gap-2 bg-white w-max min-w-[20vw] max-w-[600px] p-4 rounded-lg">
+    <div className="flex flex-col gap-2 bg-white dark:bg-gray-600 w-max min-w-[20vw] max-w-[600px] p-4 shadow-lg rounded-lg">
       <h3>{option === "followers" ? "Followers" : "Following"}</h3>
       <hr></hr>
 

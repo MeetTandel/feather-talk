@@ -13,7 +13,7 @@ export function FollowSuggestions() {
   );
 
   return (
-    <div className="border rounded-xl flex flex-col">
+    <div className="border dark:border-0 rounded-xl flex flex-col">
       <h3 className="p-2">Suggested for you</h3>
 
       <hr></hr>

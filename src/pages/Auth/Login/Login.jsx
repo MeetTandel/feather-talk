@@ -47,7 +47,7 @@ export function Login() {
         </div>
       </div>
 
-      <div className="bg-blue-100 w-[50%] grow flex flex-col gap-4 h-screen justify-center items-center">
+      <div className="bg-blue-100 dark:text-slate-800 w-[50%] grow flex flex-col gap-4 h-screen justify-center items-center">
         <h1 className="text-blue-400 font-medium md:hidden">
           Login to FeatherTalk
         </h1>

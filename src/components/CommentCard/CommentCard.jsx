@@ -14,7 +14,7 @@ export function CommentCard({ comment }) {
   }, [users]);
 
   return (
-    <div className="cursor-pointer flex flex-col gap-2 min-h-[80px} rounded-xl overflow-hidden px-3 py-3 bg-white hover:bg-slate-100">
+    <div className="cursor-pointer flex flex-col gap-2 min-h-[80px} rounded-xl overflow-hidden px-3 py-3 bg-white hover:bg-slate-100 dark:bg-gray-600 dark:hover:bg-slate-700">
       <div className="flex gap-2 w-full">
         <div className="h-[100%] w-max  flex justify-center">
           <img

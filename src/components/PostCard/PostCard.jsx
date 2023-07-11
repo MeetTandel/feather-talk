@@ -53,7 +53,7 @@ export function PostCard({ post, showComment }) {
   };
 
   return (
-    <div className="relative h-max flex flex-col gap-4 bg-white p-2 shadow-md border rounded-xl overflow-hidden">
+    <div className="relative h-max flex flex-col gap-4 bg-white dark:bg-gray-600 p-2 shadow-md border dark:border-none rounded-xl overflow-hidden">
       <section>
         <div className="flex items-center gap-2 overflow-hidden justify-between">
           <div className="h-[100%] grow flex items-center gap-2">
@@ -69,8 +69,8 @@ export function PostCard({ post, showComment }) {
             </div>
             <div className="grow h-[100%] flex flex-col justify-center">
               <h3 className="-mb-1">{`${postedBy?.firstName} ${postedBy?.lastName}`}</h3>
-              <p className="-mt-1 text-slate-500">{`@${postedBy.username}`}</p>
-              <small className="-mt-1 text-slate-500">{`${postDate.getUTCMonth()}-${postDate.getUTCDate()}-${postDate.getUTCFullYear()}, ${postDate.getUTCHours()}:${postDate.getUTCMinutes()}${
+              <p className="-mt-1 text-slate-500 dark:text-slate-300">{`@${postedBy.username}`}</p>
+              <small className="-mt-1 text-slate-500 dark:text-slate-300">{`${postDate.getUTCMonth()}-${postDate.getUTCDate()}-${postDate.getUTCFullYear()}, ${postDate.getUTCHours()}:${postDate.getUTCMinutes()}${
                 postDate.getUTCHours() >= 12 ? "pm" : "am"
               } `}</small>
             </div>
@@ -78,7 +78,7 @@ export function PostCard({ post, showComment }) {
 
           {postedByCurrentUser && (
             <div
-              className="cursor-pointer p-2 rounded-full hover:bg-slate-200 hover:text-blue-400"
+              className="cursor-pointer p-2 rounded-full hover:bg-slate-200 hover:text-blue-400 dark:hover:bg-slate-500 dark:hover:text-blue-200"
               onClick={() => setShowPostActions(!showPostActions)}
             >
               <OptionsIcon size={18} />
