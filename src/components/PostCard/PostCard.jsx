@@ -34,7 +34,6 @@ export function PostCard({ post, showComment }) {
   const postDate = new Date(post.createdAt);
   // const postLiked = likedPosts.some(({ _id }) => _id === post._id);
   const postLiked = post.likes.likedBy.some(({ _id}) => _id === user._id)
-  // console.log("likedPosts", postLiked, user._id)
   const postBookmarked = savedPosts.some(({ _id }) => _id === post._id);
 
   const handlePostLike = () => {

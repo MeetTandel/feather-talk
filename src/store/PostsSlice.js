@@ -188,7 +188,6 @@ export const handleCreatePost = createAsyncThunk(
 
       const updatedPosts = response.data.posts;
 
-      console.log("updated", updatedPosts)
       if (response.status === 201) {
         dispatch(setAllPosts(updatedPosts));
         toast.success("New post created!");
