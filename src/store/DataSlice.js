@@ -4,7 +4,7 @@ import { toast } from "react-hot-toast";
 
 const token = localStorage.getItem("token") ?? null;
 
-const applyFilters = (data, posts) => {
+export const applyFilters = (data, posts) => {
   const filteredPosts = [...posts];
   const sortMethod = data.sortMethod;
 

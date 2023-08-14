@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
 import { toast } from "react-hot-toast";
-import { setAllPosts } from "./DataSlice";
+import { applyFilters, setAllPosts, setFilteredPosts } from "./DataSlice";
 
 const token = localStorage.getItem("token") ?? null;
 
@@ -37,8 +37,9 @@ export const getPost = createAsyncThunk(
 
 export const likePost = createAsyncThunk(
   "posts/likePost",
-  async (postId, { dispatch }) => {
+  async (postId, { getState, dispatch }) => {
     dispatch(setLoading(true));
+    const data = getState().data
     try {
       const response = await axios.post(`/api/posts/like/${postId}`, "", {
         headers: { authorization: token },
@@ -47,6 +48,8 @@ export const likePost = createAsyncThunk(
 
       if (response.status === 201) {
         dispatch(setAllPosts(updatedPosts));
+        const filteredPosts = applyFilters(data, updatedPosts);
+        dispatch(setFilteredPosts(filteredPosts))
         toast.success("Post added to Liked posts!");
       }
     } catch (e) {
@@ -59,7 +62,8 @@ export const likePost = createAsyncThunk(
 
 export const dislikePost = createAsyncThunk(
   "posts/dislikePost",
-  async (postId, { dispatch }) => {
+  async (postId, { getState, dispatch }) => {
+    const data = getState().data
     dispatch(setLoading(true));
     try {
       const response = await axios.post(`/api/posts/dislike/${postId}`, "", {
@@ -69,6 +73,8 @@ export const dislikePost = createAsyncThunk(
 
       if (response.status === 201) {
         dispatch(setAllPosts(updatedPosts));
+        const filteredPosts = applyFilters(data, updatedPosts);
+        dispatch(setFilteredPosts(filteredPosts))
         toast.error("Post removed from Liked posts!");
       }
     } catch (e) {

@@ -13,15 +13,18 @@ import { CommentCard } from "../CommentCard/CommentCard";
 import { useState } from "react";
 import { PostActions } from "../PostActions/PostActions";
 import { useDispatch, useSelector } from "react-redux";
-import { addBookmark, dislikePost, likePost, removeBookmark } from "../../store/PostsSlice";
+import {
+  addBookmark,
+  dislikePost,
+  likePost,
+  removeBookmark,
+} from "../../store/PostsSlice";
 
 export function PostCard({ post, showComment }) {
-  const { user, users } = useSelector(state => state.data);
-  const {
-    postLoading,
-    likedPosts,
-    savedPosts,
-  } = useSelector(state => state.posts);
+  const { user, users } = useSelector((state) => state.data);
+  const { postLoading, likedPosts, savedPosts } = useSelector(
+    (state) => state.posts
+  );
   const [showPostActions, setShowPostActions] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -29,7 +32,9 @@ export function PostCard({ post, showComment }) {
   const postedBy = users.find(({ username }) => username === post.username);
   const postedByCurrentUser = user.username === post.username;
   const postDate = new Date(post.createdAt);
-  const postLiked = likedPosts.some(({ _id }) => _id === post._id);
+  // const postLiked = likedPosts.some(({ _id }) => _id === post._id);
+  const postLiked = post.likes.likedBy.some(({ _id}) => _id === user._id)
+  // console.log("likedPosts", postLiked, user._id)
   const postBookmarked = savedPosts.some(({ _id }) => _id === post._id);
 
   const handlePostLike = () => {
